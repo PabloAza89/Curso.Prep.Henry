@@ -166,8 +166,8 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  for (let i = 1 ; i < numero ; i++) {
-    if (((numero / 1) === numero) && ((numero / numero) === 1) && !(((numero / i) === 2) || ((numero / i) === 3))) {
+  for (let i = numero ; i <= numero ; i++) {
+    if (((numero % 2) === 0) || ((numero % 3) === 0)) {
       return 'esPrimoo';
     }
     return false;
