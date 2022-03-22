@@ -157,7 +157,7 @@ function operadoresLogicos(num1, num2, num3) {
         if ((num3 > num1) && (num3 > num2)) {
           return num3 + 1;
         }
-          return 'false';
+          return false;
 }
 
 function esPrimo(numero) {
@@ -205,15 +205,24 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  if ((numero < 1000) && (numero > 99)) {
+    return true;
+  }
+    return false;
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-}
 
+  var i = numero;
+  
+  do {
+    i = i + 5;    
+  } while (i < (numero + (8 * 5)));
+  return i;
+}
 
 // No modificar nada debajo de esta línea
 // --------------------------------
