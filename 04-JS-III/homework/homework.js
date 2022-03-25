@@ -102,32 +102,49 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+  var multiplica = 1;
+  if (arguments.length < 1) return 0;
+    
+  for (var i = 0 ; i < arguments.length ; i++) {
+    multiplica *= arguments[i];
+  }
+    return multiplica;
 }
-
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+  arreglo.sort(function(a, b){return (a - b)});
+ 
+  do {
+    arreglo.shift();
+  } while (arreglo[0] <= 18);
 
+  return arreglo.length;  
 }
-
 
 function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
-  //Escribe tu código aquí   
-  
+  //Escribe tu código aquí     
+  if ((numeroDeDia === 1 ) || (numeroDeDia === 7)) {
+    return 'Es fin de semana';
+  }
+    return 'Es dia Laboral';
 } 
-
 
 function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
-  //Escribe tu código aquí
-  
-}
+  //Escribe tu código aquí 
+  var cadena = n.toString();
 
+  if (cadena.substring(0,1) === '9') {
+    return true;
+  }
+    return false;
+}
 
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
