@@ -58,7 +58,7 @@ function saludo(idioma) {
         else if ((idioma !== 'aleman') || (idioma !== 'mandarin') || (idioma !== !'ingles') || (idioma === undefined)) {
           return 'Hola!';
         }
-          return;
+    return;
 }
 
 function colors(color) {
