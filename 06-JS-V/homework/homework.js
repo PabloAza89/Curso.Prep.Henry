@@ -1,7 +1,5 @@
 // No cambies los nombres de las funciones.
 
-const { straightThroughStringTask } = require("simple-git/src/lib/tasks/task");
-
 function crearUsuario() {
   // Crea una Clase de ES6 o una función constructor llamada "Usuario"
   // Debe aceptar un objeto "opciones" con las propiedades "usuario", "nombre", "email" y "password"
@@ -28,6 +26,9 @@ function agregarMetodoPrototype(Constructor) {
   // Agrega un método al Constructor del `prototype`
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
+  Constructor.prototype.saludar = function() {
+    return 'Hello World!';
+  }
 }
 
 function agregarStringInvertida() {
@@ -36,6 +37,13 @@ function agregarStringInvertida() {
   // Ej: 'menem'.reverse() => menem
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
+  String.prototype.reverse = function() {
+    var frase = "";
+    for (var i = this.length - 1 ; i >= 0 ; i--) { 
+      frase += this[i]; 
+    }
+    return frase;
+  }
 }
 
 // ---------------------------------------------------------------------------//
@@ -50,16 +58,28 @@ function agregarStringInvertida() {
     //  }
 
   class Persona {
-    constructor(/*Escribir los argumentos que recibe el constructor*/) {
+    constructor (nombre, apellido, edad, domicilio) {
       // Crea el constructor:
-
-    }
+      nombre = this.nombre;
+      apellido = this.apellido;
+      edad = this.edad;
+      domicilio = this.domicilio;
+      }
+      detalle() {
+        console.log('Nombre: ' + this.nombre);
+        console.log('Apellido: ' + this.apellido);
+        console.log('Edad: ' + this.edad);
+        console.log('Domicilio: ' + this.domicilio);
+        }     
+    
 }
 
-function crearInstanciaPersona(nombre, apellido, edad, dir) {
+function crearInstanciaPersona(nombre, apellido, edad, direccion) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
+  var juan = new Persona('Juan', 'Perez', 22, 'Saavedra 123');
+  return juan.detalle();
 }
   
 function agregarMetodo() {
