@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { straightThroughStringTask } = require("simple-git/src/lib/tasks/task");
+
 function crearUsuario() {
   // Crea una Clase de ES6 o una función constructor llamada "Usuario"
   // Debe aceptar un objeto "opciones" con las propiedades "usuario", "nombre", "email" y "password"
@@ -8,23 +10,18 @@ function crearUsuario() {
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
   // Tu código:
-  function Usuario(opciones) {
-    this.usuario = usuario;
-    this.nombre = nombre;
-    this.email = email;
-    this.password = password;
-    this.saludar = function() {
+  class Usuario {
+    constructor (opciones) {
+      this.usuario = opciones.usuario;
+      this.nombre = opciones.nombre;
+      this.email = opciones.email;
+      this.password = opciones.password;
+      }
+      saludar() {
         return 'Hola, mi nombre es ' + this.nombre;
-    }
+      }
   }
-
-  function opciones() {
-    this.usuario,
-    this.nombre,
-    this.email,
-    this.password,
-  }
-  return Usuario();
+    return Usuario;
 }
 
 function agregarMetodoPrototype(Constructor) {
