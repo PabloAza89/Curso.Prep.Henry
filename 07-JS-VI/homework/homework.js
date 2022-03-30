@@ -4,6 +4,15 @@ function mayuscula(nombre) {
   //La función recibe un nombre y debe devolver el mismo que recibe pero con su primer letra en mayúscula
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
+  
+ String.prototype.capitalizar = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1)
+     }
+  
+  nombre.forEach(function(elemento) {
+    return elemento.capitalizar();
+  })
+  return elemento;
 }
 
 function invocarCallback(cb) {
