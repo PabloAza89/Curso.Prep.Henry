@@ -1,0 +1,24 @@
+body {
+    background: url('https://st2.depositphotos.com/2332949/7639/i/600/depositphotos_76399669-stock-photo-mock-up-plate-on-white.jpg');
+}
+h1 {
+    color: blue;
+}
+img {
+    width: 400px;
+}
+#thirdDiv {
+    height: 600px;
+    width: 500px;
+    background: aquamarine;
+    padding: 50xp;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;   
+}
+#spanID {
+    font-size: 18px;
+    margin: 50px;    
+}
+
+
