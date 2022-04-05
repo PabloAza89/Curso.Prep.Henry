@@ -1,86 +1,94 @@
+img {
+  max-width:60%;
+} 
 body {
   background-color: grey;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
-
 .flex-container {
-    display: flex;
-    background-color: grey;
-    max-width: 100%;
-    max-height: 40000px;
-    align-items:flex-start;
-  }
-
-
+  display: flex;
+  background-color: grey;
+  width: 100vw;
+  max-height: 40000px;
+}
 .flexMenu-1 {
-    background-color: white;
-    width: 20%;
-    height: 58vw;   
-    position: fixed;
-    margin-top: 10px;
-    margin-left: 10px;
-    text-align: center;
-    align-content:space-between;
-
-  }
+  background-color: rgb(243, 243, 243);
+  width: 19vw;
+  height: 45vw;
+  position: fixed;
+  margin-top: 1vw;
+  margin-left: 1vw;
+  text-align: center;
+  font-size: 1vw; 
+}
 .flexTitulo-3  {
-    background-color: rgba(92, 26, 224, 0.87);    
-    height: 100px;
-    width: 73vw;
-    position: fixed;
-    margin-top: 10px;
-    margin-left: 230px;   
-    text-indent: 150px;
-     font-size: 15px;    
-  }
+  background-color: rgb(243, 243, 243);  
+  height: 10vw;
+  width: 75vw;
+  position: fixed;
+  margin-top: 1vw;
+  margin-left: 22vw;   
+  text-align: center;
+}
 .flexDescripcionPersonal-4 {
-    background-color: rgb(34, 228, 186);
-    height: 47vw;
-    width: 73vw; 
-    margin-top: 12vw;
-    margin-left: 230px;   
-    scroll-margin-block-start: 130px;
-
-  
-  }
+  background-color: rgb(243, 243, 243);
+  height: 33vw;
+  width: 75vw;
+  margin-top: 13vw;
+  margin-left: 22vw;    
+  scroll-margin-block-start: 25vw;
+  text-indent: 4%;
+  font-size: 1vw;
+}
 .flexEducation-5 {
-  background-color: rgb(34, 228, 186);
-  height: 47vw;
-  width: 73vw; 
-  margin-top: 140px;
-  margin-left: 230px;   
-  scroll-margin-block-start: 130px;
-  }
+  background-color: rgb(243, 243, 243);
+  height: 33vw;
+  width: 75vw;
+  margin-top: 15vw;
+  margin-left: 22vw;    
+  scroll-margin-block-start: 258px;
+  text-indent: 4%;
+  font-size: 1vw;
+}
 .flexExperienciasLaborales-6 {
-  background-color: rgb(34, 228, 186);
-  height: 47vw;
-  width: 73vw; 
-  margin-top: 140px;
-  margin-left: 230px;   
-  scroll-margin-block-start: 130px;
-  }
+  background-color: rgb(243, 243, 243);
+  height: 33vw;
+  width: 75vw;
+  margin-top: 15vw;
+  margin-left: 22vw;    
+  scroll-margin-block-start: 258px;
+  text-indent: 4%;
+  font-size: 1vw;
+}
 .flexSkills-7 {
-  background-color: rgb(34, 228, 186);
-  height: 47vw;
-  width: 73vw; 
-  margin-top: 140px;
-  margin-left: 230px;   
-  scroll-margin-block-start: 130px;
-  }
+  background-color: rgb(243, 243, 243);
+  height: 33vw;
+  width: 75vw;
+  margin-top: 15vw;
+  margin-left: 22vw;    
+  scroll-margin-block-start: 258px;
+  text-indent: 4%;
+  font-size: 1vw;
+}
 .flexHobbies-8 {
-  background-color: rgb(34, 228, 186);
-  height: 47vw;
-  width: 73vw; 
-  margin-top: 140px;
-  margin-left: 230px;   
-  scroll-margin-block-start: 130px;
- 
-  }
+  background-color: rgb(243, 243, 243);
+  height: 33vw;
+  width: 75vw;
+  margin-top: 15vw;
+  margin-left: 22vw;    
+  scroll-margin-block-start: 258px;
+  text-indent: 4%;
+  font-size: 1vw;
+}
 .flexExpectativas-9 {
-  background-color: rgb(34, 228, 186);
-  height: 47vw;
-  width: 73vw; 
-  margin-top: 140px;
-  margin-left: 230px;   
-  scroll-margin-block-start: 130px;
-
-  }
+  background-color: rgb(243, 243, 243);
+  height: 33vw;
+  width: 75vw;
+  margin-top: 15vw;
+  margin-bottom: 3vw;
+  margin-left: 22vw;    
+  scroll-margin-block-start: 258px;
+  text-indent: 4%;
+  font-size: 1vw;
+}
