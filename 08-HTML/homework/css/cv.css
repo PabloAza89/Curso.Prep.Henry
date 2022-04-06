@@ -6,13 +6,13 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
 }
-.flex-container {
+.generalContainer {
   display: flex;
   background-color: grey;
   width: 100vw;
   max-height: 40000px;
 }
-.flexMenu-1 {
+.leftContainerMenuBox {
   background-color: rgb(243, 243, 243);
   width: 19vw;
   height: 45vw;
@@ -22,7 +22,7 @@ body {
   text-align: center;
   font-size: 1vw; 
 }
-.flexTitulo-3  {
+.tituloBox  {
   background-color: rgb(243, 243, 243);  
   height: 10vw;
   width: 75vw;
@@ -31,18 +31,20 @@ body {
   margin-left: 22vw;   
   text-align: center;
 }
-.flexDescripcionPersonal-4 {
+.firstBox {
   background-color: rgb(243, 243, 243);
+  position: relative;
   height: 33vw;
   width: 75vw;
+  margin-left: 22vw;    
+  scroll-margin-block-start: 258px;
+  text-indent: 4%;
+  font-size: 1vw;
   margin-top: 13vw;
-  margin-left: 22vw;    
-  scroll-margin-block-start: 25vw;
-  text-indent: 4%;
-  font-size: 1vw;
 }
-.flexEducation-5 {
+.genericBox {
   background-color: rgb(243, 243, 243);
+  position: relative;
   height: 33vw;
   width: 75vw;
   margin-top: 15vw;
@@ -51,8 +53,9 @@ body {
   text-indent: 4%;
   font-size: 1vw;
 }
-.flexExperienciasLaborales-6 {
+.lastBox {
   background-color: rgb(243, 243, 243);
+  position: relative;
   height: 33vw;
   width: 75vw;
   margin-top: 15vw;
@@ -60,35 +63,5 @@ body {
   scroll-margin-block-start: 258px;
   text-indent: 4%;
   font-size: 1vw;
-}
-.flexSkills-7 {
-  background-color: rgb(243, 243, 243);
-  height: 33vw;
-  width: 75vw;
-  margin-top: 15vw;
-  margin-left: 22vw;    
-  scroll-margin-block-start: 258px;
-  text-indent: 4%;
-  font-size: 1vw;
-}
-.flexHobbies-8 {
-  background-color: rgb(243, 243, 243);
-  height: 33vw;
-  width: 75vw;
-  margin-top: 15vw;
-  margin-left: 22vw;    
-  scroll-margin-block-start: 258px;
-  text-indent: 4%;
-  font-size: 1vw;
-}
-.flexExpectativas-9 {
-  background-color: rgb(243, 243, 243);
-  height: 33vw;
-  width: 75vw;
-  margin-top: 15vw;
   margin-bottom: 3vw;
-  margin-left: 22vw;    
-  scroll-margin-block-start: 258px;
-  text-indent: 4%;
-  font-size: 1vw;
 }
