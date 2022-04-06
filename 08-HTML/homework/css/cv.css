@@ -7,12 +7,43 @@ body {
   overflow-x: hidden;
 }
 .generalContainer {
-  display: flex;
+  position: absolute;
+  left:0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
   background-color: grey;
-  width: 100vw;
-  max-height: 40000px;
 }
 .leftContainerMenuBox {
+  background-color: rgb(243, 243, 243);
+  width: 25%;
+  position: fixed;
+  top: 3%;
+  left: 2%;
+  bottom: 3%;  
+  text-align: center;
+  font-size: 80%; 
+}
+.tituloBox  {
+  background-color: rgb(243, 243, 243);  
+  height: 27%;
+  position: fixed;
+  top: 3%;
+  left: 29%;  
+  right: 2%; 
+  text-align: center;
+}
+.genericBox {
+  background-color: rgb(243, 243, 243);
+  position: relative;
+  height: 63%;
+  left: 29%; 
+  width: 69%;
+  margin-top: 21%;
+  scroll-margin-block: 20.5vw;
+}
+
+/*.leftContainerMenuBox {
   background-color: rgb(243, 243, 243);
   width: 19vw;
   height: 45vw;
@@ -64,4 +95,4 @@ body {
   text-indent: 4%;
   font-size: 1vw;
   margin-bottom: 3vw;
-}
+}*/
