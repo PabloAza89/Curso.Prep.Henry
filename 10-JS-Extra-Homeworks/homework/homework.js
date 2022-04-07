@@ -10,6 +10,17 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var array1 = objeto;;
+  var array2 = [];
+  var array3 = [];
+  
+  for (var i = 0 ; i < 10 ; i++) {
+    array2.push(array1);
+  }
+   for (var j = 0 ; i < 10 ; i++) {
+      array3.push(array2);
+   }
+   return array3;
 }
 
 
