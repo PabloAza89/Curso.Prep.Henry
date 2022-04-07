@@ -1,98 +1,48 @@
 img {
-  max-width:60%;
+  max-width:50%;
 } 
 body {
   background-color: grey;
   overflow-y: hidden;
   overflow-x: hidden;
 }
-.generalContainer {
-  position: absolute;
-  left:0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+.generalBox {
   background-color: grey;
+  position: absolute;
+  left:0vw;
+  right: 0vw;
+  top: 0vh;
+  bottom: 0vh;
 }
-.leftContainerMenuBox {
+.leftMenuBox {
   background-color: rgb(243, 243, 243);
-  width: 25%;
   position: fixed;
-  top: 3%;
-  left: 2%;
-  bottom: 3%;  
+  width: 25vw;
+  left: 2vw;
+  top: 3vh;
+  bottom: 3vh;
   text-align: center;
-  font-size: 80%; 
+  font-size: 1vw;  
 }
-.tituloBox  {
+.rightTituloBox  {
   background-color: rgb(243, 243, 243);  
-  height: 27%;
   position: fixed;
-  top: 3%;
-  left: 29%;  
-  right: 2%; 
+  left: 29vw; 
+  right: 2vw; 
+  height: 27vh;
+  top: 3vh;
   text-align: center;
-}
-.genericBox {
-  background-color: rgb(243, 243, 243);
-  position: relative;
-  height: 63%;
-  left: 29%; 
-  width: 69%;
-  margin-top: 21%;
-  scroll-margin-block: 20.5vw;
-}
-
-/*.leftContainerMenuBox {
-  background-color: rgb(243, 243, 243);
-  width: 19vw;
-  height: 45vw;
-  position: fixed;
-  margin-top: 1vw;
-  margin-left: 1vw;
-  text-align: center;
-  font-size: 1vw; 
-}
-.tituloBox  {
-  background-color: rgb(243, 243, 243);  
-  height: 10vw;
-  width: 75vw;
-  position: fixed;
-  margin-top: 1vw;
-  margin-left: 22vw;   
-  text-align: center;
-}
-.firstBox {
-  background-color: rgb(243, 243, 243);
-  position: relative;
-  height: 33vw;
-  width: 75vw;
-  margin-left: 22vw;    
-  scroll-margin-block-start: 258px;
-  text-indent: 4%;
-  font-size: 1vw;
-  margin-top: 13vw;
-}
-.genericBox {
-  background-color: rgb(243, 243, 243);
-  position: relative;
-  height: 33vw;
-  width: 75vw;
-  margin-top: 15vw;
-  margin-left: 22vw;    
-  scroll-margin-block-start: 258px;
-  text-indent: 4%;
   font-size: 1vw;
 }
-.lastBox {
+.rightGenericBox {
   background-color: rgb(243, 243, 243);
   position: relative;
-  height: 33vw;
-  width: 75vw;
-  margin-top: 15vw;
-  margin-left: 22vw;    
-  scroll-margin-block-start: 258px;
-  text-indent: 4%;
+  width: 69vw;
+  left: 29vw; 
+  height: 63vh;
+  margin-top: 34vh;
+  margin-bottom: 45vh;
+  scroll-margin-block: 34vh;
+  text-indent: 4vw;
   font-size: 1vw;
-  margin-bottom: 3vw;
-}*/
+}
