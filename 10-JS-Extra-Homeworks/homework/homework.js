@@ -23,14 +23,14 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
-  var count = {};
+  var suma = {};
 
   string.split('').forEach( 
     function(i) {
-       count[i] ? count[i]++ : count[i] = 1;
+       suma[i] ? suma[i]++ : suma[i] = 1;
     }
   )
-  return count;
+  return suma;
 }
 
 function capToFront(s) {
