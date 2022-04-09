@@ -23,21 +23,27 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
-  var suma = {};
+  var resultado = {};
 
   string.split('').forEach( 
     function(i) {
-       suma[i] ? suma[i]++ : suma[i] = 1;
+      resultado[i] ? resultado[i]++ : resultado[i] = 1;
     }
   )
-  return suma;
+  return resultado;
 }
 
 function capToFront(s) {
   //Realiza una función que reciba como parámetro un string y mueva todas las letras mayúsculas
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
+  //Ejemplo: DESArrollaDOR -> DESADORrrolla
   //Escribe tu código aquí
+  
+  const resultado = [...s]
+  .sort((a, b) => /[A-Z]/.test(a) ? /[A-Z]/.test(b) ? 0 : -1 : 0).join('');
+
+return resultado;
 }
 
 
