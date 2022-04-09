@@ -37,15 +37,10 @@ function capToFront(s) {
   //Realiza una función que reciba como parámetro un string y mueva todas las letras mayúsculas
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
-  //Ejemplo: DESArrollaDOR -> DESADORrrolla
   //Escribe tu código aquí
-  
-  const resultado = [...s]
-  .sort((a, b) => /[A-Z]/.test(a) ? /[A-Z]/.test(b) ? 0 : -1 : 0).join('');
-
-return resultado;
+  var resultado = [...s].sort((a, b) => /[A-Z]/.test(a) ? /[A-Z]/.test(b) ? 0 : -1 : 0).join('');
+  return resultado;
 }
-
 
 function asAmirror(str) {
   //La función recibe una frase. 
