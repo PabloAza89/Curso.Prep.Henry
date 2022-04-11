@@ -46,6 +46,7 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+<<<<<<< HEAD
   
   function MayusculasAlPrincipio(s) {
     var mayuscula = '';
@@ -60,6 +61,10 @@ function capToFront(s) {
     return mayuscula + minuscula;
   }
   return MayusculasAlPrincipio(s);
+=======
+  var resultado = [...s].sort((a, b) => /[A-Z]/.test(a) ? /[A-Z]/.test(b) ? 0 : -1 : 0).join('');
+  return resultado;
+>>>>>>> a12ac7dc803c795dbdacb47de96bdb00532e5f89
 }
 
 function asAmirror(str) {
