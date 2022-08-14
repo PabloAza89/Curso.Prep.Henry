@@ -1,0 +1,48 @@
+img {
+  max-width:50%;
+} 
+body {
+  background-color: grey;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.generalBox {
+  background-color: grey;
+  position: absolute;
+  left:0vw;
+  right: 0vw;
+  top: 0vh;
+  bottom: 0vh;
+}
+.leftMenuBox {
+  background-color: rgb(243, 243, 243);
+  position: fixed;
+  width: 25vw;
+  left: 2vw;
+  top: 3vh;
+  bottom: 3vh;
+  text-align: center;
+  font-size: 1vw;  
+}
+.rightTituloBox  {
+  background-color: rgb(243, 243, 243);  
+  position: fixed;
+  left: 29vw; 
+  right: 2vw; 
+  height: 27vh;
+  top: 3vh;
+  text-align: center;
+  font-size: 1vw;
+}
+.rightGenericBox {
+  background-color: rgb(243, 243, 243);
+  position: relative;
+  width: 69vw;
+  left: 29vw; 
+  height: 63vh;
+  margin-top: 34vh;
+  margin-bottom: 45vh;
+  scroll-margin-block: 34vh;
+  text-indent: 4vw;
+  font-size: 1vw;
+}
